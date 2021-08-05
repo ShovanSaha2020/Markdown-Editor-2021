@@ -1,5 +1,5 @@
 # Markdown-Editor-2021
-JetBrains Academy Project | Level :  Medium
+## JetBrains Academy Project | Level :  Medium
 
 ### About
 Markdown is a special plain text formatting language that is extremely popular among developers. It is used in documents, research articles, Github README files, and other things. In this project, I have created an editor that can recognize several tags, structures, and save the results to a file.
