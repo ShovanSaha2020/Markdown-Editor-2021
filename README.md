@@ -7,15 +7,15 @@ Markdown is a special plain text formatting language that is extremely popular a
 
 The program works in the following way:
 1. It will ask the user to input a formatter name.
-2. If the formatter doesn't exist, it will print the following error message: "Unknown formatting type or command."
+2. If the formatter doesn't exist, it will print the following error message: `Unknown formatting type or command`.
 3. Then it will ask the user to input a text that will be applied to the formatter.
 4. It will save the text with the chosen formatter applied to it and print the markdown after that. Each time the program will print out the whole text in markdown accumulated so far.
 5. Available formatters:
 	* plain — a normal text without any formatting
-	* bold/italic — self-explanatory
-	* inline-code — for example, python editor.py
+	* **bold**/*italic* — self-explanatory
+	* inline-code — for example, `python editor.py`
 	* link — for example, google.com
-	* header — look at the header of this stage.
+	* header — look at the header of this file.
 	* unordered-list — this very list is an example of an unordered list
 	* ordered-list — a list with enumerated elements
 	* new-line — switches to the next line
@@ -31,7 +31,7 @@ Plain, **bold**, *italic*, and `inline-code` formatters require only text input,
 
     Text: > Some text
     
-Headers require  a level and text. A level is a number from 1 to 6. Don't forget to check it too: if it is out of bounds, print the corresponding error: `The level should be within the range of 1 to 6`. Also, remember that a heading automatically adds a new line in the end.
+Headers require  a level and text. A level is a number from 1 to 6. If it is out of bounds, the code will print the corresponding error: `The level should be within the range of 1 to 6`. A heading automatically adds a new line in the end.
 
     Level: > 4  
     Text: > Hello World!
@@ -41,16 +41,14 @@ Link requires a label and a URL:
     Label: > Tutorial  
     URL: > https://www.markdownguide.org/basic-syntax/
     
-In case of ordered and un-ordered list:
+In case of ordered and un-ordered list the user has to input the number of rows and the text in each row. 
 
     Number of rows: > 3  
     Row #1: > First element  
     Row #2: > Second element  
     Row #3: > Third element
 
-It will also ensure that the number of rows is greater than zero! Otherwise, it will print the following message: `The number of rows should be greater than zero`
-
-
+It will also ensure that the number of rows is greater than zero. Otherwise, it will print the following message: `The number of rows should be greater than zero`.  The formatters automatically add a line break. 
 
 
 ### Example Outputs:
