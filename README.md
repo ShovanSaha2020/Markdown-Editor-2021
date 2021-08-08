@@ -21,7 +21,7 @@ The program works in the following way:
 	* new-line — switches to the next line
 6. Special commands:
 	* !help — prints available syntax commands.
-	* !done — saves the results to a file and exits the app.
+	* !done — saves the results to a markdown file and exits the app.
 
 Different formatters may require different inputs.
 
